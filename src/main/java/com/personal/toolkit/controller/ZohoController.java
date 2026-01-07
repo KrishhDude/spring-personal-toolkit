@@ -15,4 +15,9 @@ public class ZohoController {
     public String convertTime(String inputTime) {
         return zohoService.calculateTimeLeft(inputTime);
     }
+
+    @GetMapping("/zoho/sortString")
+    public String sortString(String input) {
+        return zohoService.sortString(input);
+    }
 }
